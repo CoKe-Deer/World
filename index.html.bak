@@ -50,7 +50,7 @@ layout: compress
                                 <polygon class="clip" points="0,1200 0,0 1920,0 1920,1200"></polygon>
                                 </clipPath>
                                 </defs>
-                                <image clip-path="http://ww2.sinaimg.cn/large/005NTdadgw1enjeg0gq4aj318g0p0gpn.jpg" width="1920" height="1200" xlink:href="http://ww2.sinaimg.cn/large/005NTdadgw1enjeg0gq4aj318g0p0gpn.jpg"></image>
+                                <image clip-path="http://ww2.sinaimg.cn/large/005NTdadgw1enjeg0gq4aj318g0p0gpn.jpg" width="1920" height="1200" xlink:href="{{ post.image }}"></image>
                             </svg>
                             <div class="card__content">
                                 <i class="card__btn-close fa fa-times"></i>
