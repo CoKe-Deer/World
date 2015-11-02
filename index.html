@@ -1,16 +1,14 @@
----
-layout: compress
----
+
 <!DOCTYPE html>
 <html lang="en" class="no-js">
     <head>
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>{{ site.title }}</title>
+        <title>Maybe Is Blog</title>
         <meta name="description" content="{{ site.description }}" />
         <meta name="keywords" content="{{ site.keywords }}" />
-        <meta name="author" content="{{ site.author }}" />
+        <meta name="author" content="aaa" />
         <link rel="shortcut icon" href="img/favicon.ico">
         <link rel="stylesheet" type="text/css" href="css/normalize.css" />
         <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.3.0/css/font-awesome.min.css" />
@@ -28,9 +26,9 @@ layout: compress
     <body class="body">
         <div class="container">
             <header class="header">
-                <h1>Modern Blog<span>A Clean, Fresh Minimal Look.</span></h1>
+                <h1>CoKe_Deer World<span>A Clean, Fresh Minimal Look.</span></h1>
                 <nav class="links">
-                    <a href="#"><i class="fa fa-twitter-square fa-3x"></i></a>
+                    <a href="#"><i class="fa fa-angle-double-down fa-3x"></i></a>
                     <a href="#"><i class="fa fa-instagram fa-3x"></i></a>
                     <a href="#"><i class="fa fa-facebook-square fa-3x"></i></a>
                     <a href="#"><i class="fa fa-tumblr-square fa-3x"></i></a>
@@ -40,36 +38,34 @@ layout: compress
                 <!-- trianglify pattern container -->
                 <div class="pattern pattern--hidden"></div>
                 <!-- cards -->
-                <div class="wrapper">
-                    {% for post in site.posts %}
+   
                         <div class="card">
                             <div class="card__container card__container--closed">
                                 <svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 1200" preserveAspectRatio="xMidYMid slice">
                                     <defs>
-                                    <clipPath id="{{ post.subtitle | slugify }}">
+                                    <clipPath id="coke_deer@outlook.com">
                                 <polygon class="clip" points="0,1200 0,0 1920,0 1920,1200"></polygon>
                                 </clipPath>
                                 </defs>
-                                <image clip-path="http://ww2.sinaimg.cn/large/005NTdadgw1enjeg0gq4aj318g0p0gpn.jpg" width="1920" height="1200" xlink:href="http://ww2.sinaimg.cn/large/005NTdadgw1enjeg0gq4aj318g0p0gpn.jpg"></image>
+                                <image clip-path="https://www.baidu.com/img/baidu_jgylogo3.gif" width="1920" height="1200" xlink:href="http://i1.hdslb.com/video/b0/b074cb35b97c84d3f9d4c31ce2a05a43.jpg"></image>
                             </svg>
                             <div class="card__content">
                                 <i class="card__btn-close fa fa-times"></i>
                                 <div class="card__caption">
-                                    <h2 class="card__title">听说这里可以修改标题</h2>
-                                    <p class="card__subtitle">{{ post.subtitle }}</p>
+                                    <h2 align="center" class="card__title">千年铁皮疯狗</h2>
+                                    <p  align="center" class="card__subtitle"> 最强洗脑广告 </p>
                                 </div>
                                 <div class="card__copy">
                                     <div class="meta">
-                                        <img class="meta__avatar" src="{{ post.avatar }}" />
-                                        <span class="meta__author">{{ post.author }}</span>
-                                        <span class="meta__date">{{ post.date | date: "%b %-d, %Y" }}</span>
+                                        <img class="meta__avatar" src="http://i2.hdslb.com/user/4333/433351/myface.jpg" />
+                                        <span class="meta__author"><a class="name" href="http://space.bilibili.com/433351" card="EdmundDZhang" title="EdmundDZhang" target="_blank">EdmundDZhang</a></span>
+                                        <span class="meta__date">最后一次修改时间：2015 11 2</span>
                                     </div>
-                                    {{ post.content }}
+                                    <object type="application/x-shockwave-flash" class="player" data="http://static.hdslb.com/play.swf" width="950" height="482" id="player_placeholder" style="visibility: visible;"><param name="bgcolor" value="#ffffff"><param name="allowfullscreeninteractive" value="true"><param name="allowfullscreen" value="true"><param name="quality" value="high"><param name="allowscriptaccess" value="always"><param name="wmode" value="direct"><param name="flashvars" value="cid=4586674&amp;aid=2931390"></object>
                                 </div>
                             </div>
                         </div>
                     </div>
-                {% endfor %}
                 <!-- /cards -->
             </div>
         </div>
