@@ -12,14 +12,12 @@
 	margin: 400px auto 60px;
 	padding: 30px 40px 22px;
 	background: #fff;
-	text-align: center;
 }
 .card__container--closed .card__content{
 	margin-top: 0;
 	padding: 0 16px;
 	pointer-events: none;
 	background: transparent;
-	text-align: center;
 }
 .card__caption{font-size:2em;max-width:800px;margin:0 auto;padding:35px 30px 0px;}
 .card__container--closed .card__caption{
@@ -29,19 +27,21 @@
 	-webkit-transform: translateY(-100%);
 	-ms-transform: translateY(-100%);
 	transform: translateY(-100%);
-	text-align: left;
+	text-align: center;
 }
 .card__title{
 	font-size: 1.5em;
 	line-height: 2;
 	margin: 5px 0 0 0;
 	color: #000000;
+	text-align:center;
 }
 .card__container--closed .card__title{
 	color: #060;
 	text-align: center;
 }
-.card__subtitle{font-size:.95em;line-height:1;margin:5px 0 0;color:#777778;}
+.card__subtitle{font-size:.95em;line-height:1;margin:5px 0 0;color:#777778;
+text-align:center;}
 .card__container--closed .card__subtitle{
 	color: #000000;
 	text-align: center;
@@ -52,6 +52,7 @@
 	margin: 0 auto;
 	padding: 25px 30px 100px;
 	color: #3b393d;
+	text-align: left;
 }
 .card__copy p:first-of-type{font-size:1.5em;padding:0 0 1em 0;}
 .card__btn-close{font-size:18px;position:absolute;top:0;right:0;padding:36px;cursor:pointer;}
@@ -63,6 +64,7 @@
 	padding: 0 0 50px 0;
 	-webkit-align-items: center;
 	align-items: center;
+	text-align: left;
 }
 .meta__avatar{border-radius:50%;height:50px;width:50px;}
 .meta__author{font-weight:bold;padding:0 15px;}
