@@ -209,7 +209,7 @@ a:hover, a:focus {
 	color: #4f4c4c;
 }
 .body .header h1 span {
-	color: #4f4c4c;
+	color: #003300;
 }
 .hidden {
 	position: absolute;
@@ -295,4 +295,3 @@ a:hover, a:focus {
 	-webkit-transform: scale(1)!important;
 	transform: scale(1)!important;
 }
-
