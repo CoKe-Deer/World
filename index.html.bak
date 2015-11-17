@@ -1,83 +1,344 @@
-
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en" class="no-js">
-    <head>
+        <head>
         <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta http-equiv=X-UA-Compatible content="IE=edge,chrome=1">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>{{ site.title }}</title>
-        <meta name="description" content="{{ site.description }}" />
-        <meta name="keywords" content="{{ site.keywords }}" />
-        <meta name="author" content="aaa" />
+        <title>Maybe Is My Blog</title>
         <link rel="shortcut icon" href="img/favicon.ico">
         <link rel="stylesheet" type="text/css" href="css/normalize.css" />
         <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.3.0/css/font-awesome.min.css" />
         <link rel="stylesheet" type="text/css" href="css/modern-blog.min.css" />
+        <link href="css/hover.css" rel="stylesheet" media="all">
+
         <!--[if IE]>
-        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <script src="js/html5.js"></script>
         <![endif]-->
         <script>
         if (navigator.userAgent.toLowerCase().indexOf('firefox') > -1) {
         var root = document.getElementsByTagName('html')[0];
         root.setAttribute('class', 'ff');
-        };
+        }if ((navigator.userAgent.indexOf('MSIE') >= 0) 
+    && (navigator.userAgent.indexOf('Opera') < 0)){
+		window.alert=function(title,content) 
+	{ 
+		execScript('MsgBox "'+content+'",0,"'+title+'"','VBScript'); 
+	} 
+    alert("不要使用IE内核！",'请不要使用带有IE内核的浏览器打开这个网页，本网页鄙视IE内核，请下载带有chrome(谷歌)内核的浏览器（360浏览器，猎豹浏览器，谷歌浏览器）打开这个网页，谢谢')
+	}
         </script>
-    </head>
-    <body class="body">
-        <div class="container">
-            <header class="header">
-                <h1>Modern Blog<span>A Clean, Fresh Minimal Look.</span></h1>
-                <nav class="links">
-                    <a href="#"><i class="fa fa-twitter-square fa-3x"></i></a>
-                    <a href="#"><i class="fa fa-instagram fa-3x"></i></a>
-                    <a href="#"><i class="fa fa-facebook-square fa-3x"></i></a>
-                    <a href="#"><i class="fa fa-tumblr-square fa-3x"></i></a>
-                </nav>
-            </header>
-            <div class="content">
-                <!-- trianglify pattern container -->
-                <div class="pattern pattern--hidden"></div>
-                <!-- cards -->
-                <div class="wrapper">
-                    {% for post in site.posts %}
-                        <div class="card">
-                            <div class="card__container card__container--closed">
-                                <svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 1200" preserveAspectRatio="xMidYMid slice">
-                                    <defs>
-                                    <clipPath id="{{ post.subtitle | slugify }}">
-                                <polygon class="clip" points="0,1200 0,0 1920,0 1920,1200"></polygon>
-                                </clipPath>
-                                </defs>
-                                <image clip-path="http://ww2.sinaimg.cn/large/005NTdadgw1enjeg0gq4aj318g0p0gpn.jpg" width="1920" height="1200" xlink:href="http://ww2.sinaimg.cn/large/005NTdadgw1enjeg0gq4aj318g0p0gpn.jpg"></image>
-                            </svg>
-                            <div class="card__content">
-                                <i class="card__btn-close fa fa-times"></i>
-                                <div class="card__caption">
-                                    <h2 class="card__title">听说这里可以修改标题</h2>
-                                    <p class="card__subtitle">{{ post.subtitle }}</p>
-                                </div>
-                                <div class="card__copy">
-                                    <div class="meta">
-                                        <img class="meta__avatar" src="{{ post.avatar }}" />
-                                        <span class="meta__author">{{ post.author }}</span>
-                                        <span class="meta__date">{{ post.date | date: "%b %-d, %Y" }}</span>
-                                    </div>
-                                    {{ post.content }}
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                {% endfor %}
-                <!-- /cards -->
+        </head>
+        <body class="body">
+<div class="container">
+          <header class="header">
+    <h1 class="hvr-pop" >CoKe_Deer World<span class="hvr-bounce-in">用共享来创造新世界.</span></h1>
+    <nav class="links"> <a  class="hvr-bounce-in" target="_blank" href="https://github.com/CoKe-Deer/coke-deer.github.com"><i class="fa fa-github fa-3x"></i></a> <a   class="hvr-bounce-in" target="_blank" href="http://space.bilibili.com/898556"><i class="fa fa-bold fa-3x"></i></a> <a  class="hvr-bounce-in" target="_blank" href="http://My-qqis.827315601"><i class="fa fa-qq fa-3x"></i></a> <a  class="hvr-bounce-in" target="_blank" href="http://weibo.com/p/1005055317863269/home?from=page_100505&mod=TAB#place"><i class="fa fa-weibo fa-3x"></i></a> </nav>
+  </header>
+          <div class="content"> 
+    <!-- trianglify pattern container -->
+    <div class="pattern pattern--hidden"></div>
+    <!-- cards -->
+    <div class="card">
+              <div class="card__container card__container--closed"> <svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 1200" preserveAspectRatio="xMidYMid slice">
+                <defs>
+                <clipPath id="coke_deer@outlook.com">
+                    <polygon class="clip" points="0,1200 0,0 1920,0 1920,1200"></polygon>
+                  </clipPath>
+              </defs>
+                <image class="hvr-grow"  clip-path="https://www.baidu.com/img/baidu_jgylogo3.gif" width="1920" height="1200" xlink:href="http://i1.hdslb.com/video/b0/b074cb35b97c84d3f9d4c31ce2a05a43.jpg"></image>
+                </svg>
+        <div class="card__content"  > <i class="card__btn-close fa fa-times"></i>
+                  <div class="card__caption">
+            <h2  class="card__title" >千年铁皮疯狗</h2>
+            <p  class="card__subtitle"> 最强洗脑广告 </p>
+          </div>
+                  <div class="card__copy">
+            <div class="meta"> <img class="meta__avatar" src="http://i2.hdslb.com/user/4333/433351/myface.jpg" /> <span class="meta__author"><a class="name" href="http://space.bilibili.com/433351" card="EdmundDZhang" title="EdmundDZhang" onMouseOver="" target="_blank">EdmundDZhang</a></span> <span class="meta__date">文章最后一次修改时间：2015 11 2</span> </div>
+            <object align="bottom" type="application/x-shockwave-flash" class="player" data="http://static.hdslb.com/play.swf" width="100%" height="500" id="player_placeholder" style="visibility: visible;">
+                      <param name="bgcolor" value="#ffffff">
+                      <param name="allowfullscreeninteractive" value="true">
+                      <param name="allowfullscreen" value="true">
+                      <param name="quality" value="high">
+                      <param name="allowscriptaccess" value="always">
+                      <param name="wmode" value="direct">
+                      <param name="flashvars" value="cid=4586674&amp;aid=2931390">
+                    </object>
+          </div>
+                </div>
+      </div>
             </div>
+    <!-- /cards --> 
+  </div>
         </div>
-        <!-- /container -->
-        <!-- JS -->
-        <script src="js/vendors/trianglify.min.js"></script>
-        <script src="js/vendors/TweenMax.min.js"></script>
-        <script src="js/vendors/ScrollToPlugin.min.js"></script>
-        <script src="js/vendors/cash.min.js"></script>
-        <script src="js/card-modern-blog.min.js"></script>
-        <script src="js/modern-blog.min.js"></script>
-    </body>
+<!-- /container --> 
+
+<!-- three -->
+<div class="content"> 
+          <!-- trianglify pattern container -->
+          <div class="pattern pattern--hidden"></div>
+          <!-- cards -->
+          <div class="card">
+    <div class="card__container card__container--closed"> <svg class="card__image" xmlns="" xmlns:xlink="" viewBox="0 0 1920 1200" preserveAspectRatio="xMidYMid slice">
+      <image  class="hvr-grow" clip-path="https://www.baidu.com/img/baidu_jgylogo3.gif" width="1920" height="1200" xlink:href="http://ww3.sinaimg.cn/large/69d1ec9agw1ermcrnniqjj20rs0ij776.jpg"></image>
+      </svg>
+              <div class="card__content"  > <i class="card__btn-close fa fa-times"></i>
+        <div class="card__caption">
+                  <h2  class="card__title" >Wpf 进程管理器(练习成品)</h2>
+                  <p  class="card__subtitle"> 练习了很多Wpf的设计模式和Bingdin的处理模式 </p>
+                </div>
+        <div class="card__copy">
+                  <div class="meta"> <img class="meta__avatar" src="http://ww2.sinaimg.cn/large/005NTdadgw1en9e41tdisj30690693yx.jpg" /> <span class="meta__author"><a class="name" href="https://github.com/CoKe-Deer/Wpf-Process" card="这篇文章的地址" title="CoKe_Deer" onMouseOver="" target="_blank">CoKe_Deer</a></span> <span class="meta__date">文章最后一次修改时间：2015 11 3</span> </div>
+                  <div id="post_content_78445615801" class="d_post_content j_d_post_content ">
+            <h1 align="center">上学期无聊专研的WPF，看的是WPF深入浅出：<br>
+                      <br>
+                      <br>
+                      <img width="100%" src="http://pic.cr173.com/up/2013-11/2013117143825.png"><br>
+                      <br>
+                    </h1>
+            <h2>用到了很多WPF的设计特性，如用一个数据模版给一个控件绑定起来，通过自定义的标签来在后台添加，还有很多Winform很难实现的动画效果。 <br>
+                      <br>
+                      程序效果图: <img width="100%" src="http://ww1.sinaimg.cn/large/005NTdadgw1eum57u1im5j30je0i5n0l.jpg" width="900"/></h2>
+            <br>
+            <br>
+            <br>
+            </h1>
+            <h1>欢迎打包带走，转载请注明出处:-)</h1>
+          </div>
+                </div>
+      </div>
+              <!-- /cards --> 
+            </div>
+  </div>
+          
+          <!-- /container --> 
+          <!-- Tow -->
+          <div class="content"> 
+    <!-- trianglify pattern container -->
+    <div class="pattern pattern--hidden"></div>
+    <!-- cards -->
+    <div class="card">
+              <div class="card__container card__container--closed"> <svg class="card__image" xmlns="" xmlns:xlink="" viewBox="0 0 1920 1200" preserveAspectRatio="xMidYMid slice">
+                <image  class="hvr-grow" clip-path="https://www.baidu.com/img/baidu_jgylogo3.gif" width="1920" height="1200" xlink:href="http://ww2.sinaimg.cn/large/005NTdadgw1enjeg0gq4aj318g0p0gpn.jpg"></image>
+                </svg>
+        <div class="card__content"  > <i class="card__btn-close fa fa-times"></i>
+                  <div class="card__caption">
+            <h2  class="card__title" >C# 远程发送截屏 (Scoket协议)</h2>
+            <p  class="card__subtitle"> 上课无聊小程序 </p>
+          </div>
+                  <div class="card__copy">
+            <div class="meta"> <img class="meta__avatar" src="http://ww2.sinaimg.cn/large/005NTdadgw1en9e41tdisj30690693yx.jpg" /> <span class="meta__author"><a class="name" href="https://github.com/CoKe-Deer/Socket-Bitmap" card="这篇文章的地址" title="CoKe_Deer" onMouseOver="" target="_blank">CoKe_Deer</a></span> <span class="meta__date">文章最后一次修改时间：2015 11 3</span> </div>
+            <div id="post_content_78445615801" class="d_post_content j_d_post_content ">
+                      <h1 align="center">上课无聊用<br>
+                <br>
+                <br>
+                C#写的基于Socket协议的局域网传输小程序，第一步像是这样<br>
+                <br>
+                <img width="100%" class="BDE_Image" pic_type="1" width="100%"  src="http://ww4.sinaimg.cn/large/005NTdadgw1exnhismejoj30qg08yjws.jpg"><br>
+                <br>
+                第二步像是这样的：<br>
+                <br>
+                <br>
+                <img width="100%" class="BDE_Image" pic_type="1" width="100%" src="http://ww1.sinaimg.cn/large/005NTdadgw1exnmk7ms47j30un0l9ds0.jpg"><br>
+                <br>
+                <br>
+                <br>
+              </h1>
+                      <h1>欢迎打包带走，转载请注明出处:-)</h1>
+                    </div>
+          </div>
+                </div>
+        <!-- /cards --> 
+      </div>
+            </div>
+    
+    <!-- /container --> 
+    <!-- four -->
+    <div class="content"> 
+              <!-- trianglify pattern container -->
+              <div class="pattern pattern--hidden"></div>
+              <!-- cards -->
+              <div class="card">
+        <div class="card__container card__container--closed"> <svg class="card__image" xmlns="" xmlns:xlink="" viewBox="0 0 1920 1200" preserveAspectRatio="xMidYMid slice">
+          <image  class="hvr-grow" clip-path="https://www.baidu.com/img/baidu_jgylogo3.gif" width="1920" height="1200" xlink:href="http://ww3.sinaimg.cn/large/005NTdadgw1exnu51ggehj31hc0xcgxz.jpg"></image>
+          </svg>
+                  <div class="card__content"  > <i class="card__btn-close fa fa-times"></i>
+            <div class="card__caption">
+                      <h2  class="card__title" >值得思考的一件事</h2>
+                      <p  class="card__subtitle">贴吧无聊随笔 2014-08-25 14:58</p>
+                    </div>
+            <div class="card__copy">
+                      <div class="meta"> <img  class="meta__avatar" src="http://ww2.sinaimg.cn/large/005NTdadgw1en9e41tdisj30690693yx.jpg" /> <span class="meta__author"><a class="name" href="http://tieba.baidu.com/p/3254478986" card="这篇文章的地址" title="CoKe_Deer" onMouseOver="" target="_blank">CoKe_Deer</a></span> <span class="meta__date">文章最后一次修改时间：2014-08-25 14:58</span> </div>
+                      <div id="post_content_78445615801" class="d_post_content j_d_post_content ">
+                <h3>
+                          <pre>值得思考的一件事，在看完夺宝奇兵3之后.
+  里面有一个纳粹的烧书仪式，这时候看的真的很心痛，看着那些年轻人不好好读书就算了，还争先恐后的把书丢进大火里去烧，再想想阿道夫·希特勒为什么要这样做，从权利角度出发的话，就是为了控制无知的群众，再看看那些狂热分子为什么这么支持希特勒，为什么年轻人如此堕落.
+  这说明了当一个人在社会宣传“主流”、公众代表、高层影响的情况下，很难有自己独立思考，简单来说就是想清楚自己在干什么，在帮谁，那个人又是怎么样的，全部都被有心人控制了。再想想自己国家，在秦始王那个时候，也有烧书的文化革命，这时候就出现了一个问题，为什么我对别的国家烧书却这么心痛，而自己国家也做过这样的事情，自己却跟不知道一样呢，还是说自己以前太无知，根本不知道这件事带来的影响，没有直接的画面演示当时那悲惨的情况，就直接把他给原谅了？最后再说说阿道夫·希特勒把马克思、海涅、左拉等人的书都给烧了，同时说明了希特勒十分仇恨马克思主义.
+  这时候倒是给我这种也不喜欢马克思主义的人打了一记肾上腺素，原来希特勒也这么讨厌马克思主义啊，实际事实上马克思主义的主要代表“辩证唯物”也确实遭到了逻辑人士的严厉打击，说跟那些没逻辑的宗教信仰一样，这时候话题就比较远了，这里不提。</pre>
+                        </h3>
+                <img width="100%" src="http://ww2.sinaimg.cn/large/005NTdadgw1exnubjrhuej308c0b4410.jpg"/> <br>
+                <br>
+                <img width="100%" src="http://ww2.sinaimg.cn/large/005NTdadgw1exnubjapnhj30e80ben2g.jpg" /> </div>
+                    </div>
+          </div>
+                  <!-- /cards --> 
+                </div>
+      </div>
+              
+              <!-- /container --> 
+              <!-- five -->
+              <div class="content"> 
+        <!-- trianglify pattern container -->
+        <div class="pattern pattern--hidden"></div>
+        <!-- cards -->
+        <div class="card">
+                  <div class="card__container card__container--closed"> <svg class="card__image" xmlns="" xmlns:xlink="" viewBox="0 0 1920 1200" preserveAspectRatio="xMidYMid slice">
+                    <image  class="hvr-grow" clip-path="https://www.baidu.com/img/baidu_jgylogo3.gif" width="1920" height="1200" xlink:href="http://image11.m1905.cn/uploadfile/2012/0917/20120917060742245.jpg"></image>
+                    </svg>
+            <div class="card__content"  > <i class="card__btn-close fa fa-times"></i>
+                      <div class="card__caption">
+                <h2  class="card__title" >值得思考的一件事（2）</h2>
+                <p  class="card__subtitle">贴吧无聊随笔 2014-08-25 15:28</p>
+              </div>
+                      <div class="card__copy">
+                <div class="meta"> <img class="meta__avatar" src="http://ww2.sinaimg.cn/large/005NTdadgw1en9e41tdisj30690693yx.jpg" /> <span class="meta__author"><a class="name" href="http://tieba.baidu.com/p/3254537963" card="这篇文章的地址" title="CoKe_Deer" onMouseOver="" target="_blank">CoKe_Deer</a></span> <span class="meta__date">文章最后一次修改时间：2014-08-25 15:28</span> </div>
+                <div id="post_content_78445615801" class="d_post_content j_d_post_content ">
+                          <h3>
+                    <pre>又是夺宝奇兵这部永远经典的电影.
+    这次我看完了4，里面最后是外星人坐反人类科学的飞碟去另一个次元了，当然这是电影的幻想，但是再次仔细想想，里面有一句话“在乌哈族语里黄金的意思就是“宝藏”，他们的宝藏不是黄金而是知识.
+    知识才是他们的宝藏”事实上也说明是这样的，如果我们拥有了超发达的科技，还要黄金做什么，超时空穿越、坐着自己科技的“飞碟”去另一个地球向那边的人类炫耀一下，是多么威风的事情啊。</pre>
+                  </h3>
+                          <img src="http://ww4.sinaimg.cn/large/005NTdadgw1exnusadcn5j30nl09xdml.jpg" width="%100"/> <br>
+                          <br>
+                          <img width="100%" src="http://ww1.sinaimg.cn/large/005NTdadgw1exnus9iyonj318c0ijta7.jpg" /> <br>
+                          <br>
+                          <img width="100%" src="http://ww2.sinaimg.cn/large/005NTdadgw1exnus9yra4j30rs0bkq3i.jpg" /> <br>
+                          <br>
+                          <img width="100%" src="http://ww4.sinaimg.cn/large/005NTdadgw1exnusatykcj30rs0bl3zc.jpg" /> <br>
+                          <br>
+                          <img width="100%" src="http://ww4.sinaimg.cn/large/005NTdadgw1exnutyf189j30nm09tdmd.jpg" /> </div>
+              </div>
+                    </div>
+            <!-- /cards --> 
+          </div>
+                </div>
+        
+        <!-- cards --> 
+        <!-- six -->
+        <div class="card">
+                  <div class="card__container card__container--closed"> <svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 1200" preserveAspectRatio="xMidYMid slice">
+                    <defs>
+                    <clipPath id="coke_deer@outlook.com">
+                        <polygon class="clip" points="0,1200 0,0 1920,0 1920,1200"></polygon>
+                      </clipPath>
+                  </defs>
+                    <image  class="hvr-grow" clip-path="https://www.baidu.com/img/baidu_jgylogo3.gif" width="1920" height="1200" xlink:href="http://img15.poco.cn/mypoco/myphoto/20130928/14/173702284201309281357375461084441843_009.jpg"></image>
+                    </svg>
+            <div class="card__content"  > <i class="card__btn-close fa fa-times"></i>
+                      <div class="card__caption">
+                <h2  class="card__title" >金凯瑞 今晚找小姐去</h2>
+                <p  class="card__subtitle"> 不高兴了来听听 2015-09-12 12:42 </p>
+              </div>
+                      <div class="card__copy">
+                <div class="meta"> <img class="meta__avatar" src="http://i2.hdslb.com/user/36299/3629968/myface.jpg" /> <span class="meta__author"><a class="name" href="http://www.bilibili.com/video/av2896768/" card="晓天蓝" title="晓天蓝" onMouseOver="" target="_blank">晓天蓝</a></span> <span class="meta__date">文章最后一次修改时间：2015-09-12 12:42</span> </div>
+                <object align="bottom" type="application/x-shockwave-flash" class="player" data="http://static.hdslb.com/play.swf"  width="100%" height="500" id="player_placeholder" style="visibility: visible;">
+                          <param name="bgcolor" value="#ffffff">
+                          <param name="allowfullscreeninteractive" value="true">
+                          <param name="allowfullscreen" value="true">
+                          <param name="quality" value="high">
+                          <param name="allowscriptaccess" value="always">
+                          <param name="wmode" value="direct">
+                          <param name="flashvars" value="cid=4527684&amp;aid=2896768">
+                        </object>
+              </div>
+                    </div>
+          </div>
+                </div>
+        <!-- /cards --> 
+      </div>
+            </div>
+    
+    <!--  seven -->
+    <div class="card">
+              <div class="card__container card__container--closed"> <svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 1200" preserveAspectRatio="xMidYMid slice">
+                <defs>
+                <clipPath id="coke_deer@outlook.com">
+                    <polygon class="clip" points="0,1200 0,0 1920,0 1920,1200"></polygon>
+                  </clipPath>
+              </defs>
+                <image  class="hvr-grow" clip-path="https://www.baidu.com/img/baidu_jgylogo3.gif" width="1920" height="1200" xlink:href="http://ww3.sinaimg.cn/large/005NTdadgw1exo2a0suooj318g0p0h7c.jpg"></image>
+                </svg>
+        <div class="card__content"  > <i class="card__btn-close fa fa-times"></i>
+                  <div class="card__caption">
+            <h2  class="card__title" >【钢琴】梦中的婚礼 自学弹 2015 05</h2>
+            <p  class="card__subtitle"> 个人介绍小视频 </p>
+          </div>
+                  <div class="card__copy">
+            <div class="meta"> <img class="meta__avatar" src="http://ww2.sinaimg.cn/mw690/005NTdadgw1en9e41tdisj30690693yx.jpg" /> <span class="meta__author"><a class="name" href="http://www.bilibili.com/video/av3164298/" card="夜茵" title="夜茵" onMouseOver="" target="_blank">夜茵</a></span> <span class="meta__date">文章最后一次修改时间： 2015 05 27</span> </div>
+            <object type="application/x-shockwave-flash" class="player" data="http://static.hdslb.com/play.swf" width="100%" height="482" id="player_placeholder" style="visibility: visible;">
+                      <param name="bgcolor" value="#ffffff">
+                      <param name="allowfullscreeninteractive" value="true">
+                      <param name="allowfullscreen" value="true">
+                      <param name="quality" value="high">
+                      <param name="allowscriptaccess" value="always">
+                      <param name="wmode" value="direct">
+                      <param name="flashvars" value="cid=4983559&amp;aid=3164298">
+                    </object>
+          </div>
+                </div>
+      </div>
+            </div>
+    <!-- /cards --> 
+  </div>
+        </div>
+
+<!-- /container --> 
+<!-- eight -->
+<div class="content">
+<!-- trianglify pattern container -->
+<div class="pattern pattern--hidden"></div>
+<!-- cards -->
+<div class="card">
+<div class="card__container card__container--closed"> <svg class="card__image" xmlns="" xmlns:xlink="" viewBox="0 0 1920 1200" preserveAspectRatio="xMidYMid slice">
+          <image class="hvr-grow"   clip-path="https://www.baidu.com/img/baidu_jgylogo3.gif" width="1920" height="1200" xlink:href="http://ww1.sinaimg.cn/large/005NTdadgw1exo251y47aj31hc0u0ten.jpg"></image>
+          <figcaption>
+          <div> </svg>
+    <div class="card__content"  > <i class="card__btn-close fa fa-times"></i>
+              <div class="card__caption">
+        <h2  class="card__title" >博主照片(无PS等)</h2>
+        <p  class="card__subtitle">随照 2015 3 24</p>
+      </div>
+              <div class="card__copy">
+        <div class="meta"> <img  class="meta__avatar" src="http://ww2.sinaimg.cn/large/005NTdadgw1en9e41tdisj30690693yx.jpg" /> <span class="meta__author"><a class="name" href="http://this.com" card="这篇文章的地址" title="CoKe_Deer" onMouseOver="" target="_blank">CoKe_Deer</a></span> <span class="meta__date">文章最后一次修改时间：2014-08-25 14:58</span> </div>
+        <div id="post_content_78445615801" class="d_post_content j_d_post_content ">
+                  <h3>
+            <pre>
+                      先来一张自己的吧(自行缩放):
+                      <img width="100%"  src="http://ww1.sinaimg.cn/mw690/005NTdadgw1exo1rpwvnfj31f42iob29.jpg"/>
+                      
+                      听说下面这些是我妹妹，和她的画：
+                      
+                      <img width="100%"  src="http://ww3.sinaimg.cn/mw690/005NTdadgw1exo1rtu5exj31f42ioqv5.jpg"/>
+                      <img width="100%"  src="http://ww1.sinaimg.cn/mw690/005NTdadgw1exo1rsp91lj31f42iox6p.jpg"/>
+                      <img width="100%"  src="http://ww4.sinaimg.cn/mw690/005NTdadgw1exo1rrn6vqj31f42iou0x.jpg"/>
+                      <img width="100%"  src="http://ww1.sinaimg.cn/mw690/005NTdadgw1exo1rqqr08j31f42ioqv5.jpg"/>
+                      <img width="100%"  src="http://ww4.sinaimg.cn/mw690/005NTdadgw1exo1ukde0sj30hs0nnmxo.jpg"/>
+                                            </pre>
+          </h3>
+                </div>
+      </div>
+              <!-- /cards --> 
+            </div>
+  </div>
+        </div>
+<div id="footer"> <i class="fa fa-arrow-right"> <a  href="index_2.html" class="hvr-sweep-to-left">下一页更精彩</a></i> </div>
+
+<!-- JS --> 
+<script src="js/vendors/trianglify.min.js"></script> 
+<script src="js/vendors/TweenMax.min.js"></script> 
+<script src="js/vendors/ScrollToPlugin.min.js"></script> 
+<script src="js/vendors/cash.min.js"></script> 
+<script src="js/card-modern-blog.min.js"></script> 
+<script src="js/modern-blog.min.js"></script> 
+<script src="js/html5.js"></script>
+</body>
 </html>

@@ -9,14 +9,13 @@
 	font-style: normal
 }
 .fa {
-	display: inline-block;
+	display: inline-table;
 	font: normal normal normal 14px/1 FontAwesome;
 	font-size: 36px;
 	text-rendering: auto;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	transform: translate(0, 0);
-	margin: 20px;
 }
 .fa-lg {
 	font-size: 1.33333333em;

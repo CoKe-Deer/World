@@ -1520,7 +1520,10 @@
   transition-timing-function: ease-out;
 }
 .hvr-sweep-to-left:hover, .hvr-sweep-to-left:focus, .hvr-sweep-to-left:active {
-  color: white;
+	color: white;
+	left: 0px;
+	top: 0px;
+	border-left: 3;
 }
 .hvr-sweep-to-left:hover:before, .hvr-sweep-to-left:focus:before, .hvr-sweep-to-left:active:before {
   -webkit-transform: scaleX(1);
