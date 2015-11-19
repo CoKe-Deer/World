@@ -11,11 +11,11 @@
 .fa {
 	display: inline-table;
 	font: normal normal normal 14px/1 FontAwesome;
-	font-size: 36px;
 	text-rendering: auto;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	transform: translate(0, 0);
+	font-size: 30px;
 }
 .fa-lg {
 	font-size: 1.33333333em;
