@@ -1701,7 +1701,7 @@
   transition-timing-function: ease-out;
 }
 .hvr-bounce-to-left:hover, .hvr-bounce-to-left:focus, .hvr-bounce-to-left:active {
-  color: white;
+	color: white;
 }
 .hvr-bounce-to-left:hover:before, .hvr-bounce-to-left:focus:before, .hvr-bounce-to-left:active:before {
   -webkit-transform: scaleX(1);
