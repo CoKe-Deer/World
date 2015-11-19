@@ -23,6 +23,21 @@
         <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
         <![endif]-->
         <script>
+		window.onresize = function () {history.go(0);}
+		
+		if (navigator.userAgent.toLowerCase().indexOf('firefox') > -1) {
+        var root = document.getElementsByTagName('html')[0];
+        root.setAttribute('class', 'ff');
+        }if ((navigator.userAgent.indexOf('MSIE') >= 0)
+    && (navigator.userAgent.indexOf('Opera') < 0)){
+		window.alert=function(title,content)
+	{
+		execScript('MsgBox "'+content+'",0,"'+title+'"','VBScript');
+	}
+    alert("不要使用IE内核！",'请不要使用带有IE内核的浏览器打开这个网页，本网页鄙视IE内核，请下载带有chrome(谷歌)内核的浏览器（360浏览器，猎豹浏览器，谷歌浏览器）打开这个网页，谢谢')
+	}
+		
+		
         if (navigator.userAgent.toLowerCase().indexOf('firefox') > -1) {
         var root = document.getElementsByTagName('html')[0];
         root.setAttribute('class', 'ff');

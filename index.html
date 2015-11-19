@@ -16,6 +16,7 @@
         <script src="js/html5.js"></script>
         <![endif]-->
         <script>
+		window.onresize = function () {history.go(0);}
         if (navigator.userAgent.toLowerCase().indexOf('firefox') > -1) {
         var root = document.getElementsByTagName('html')[0];
         root.setAttribute('class', 'ff');
