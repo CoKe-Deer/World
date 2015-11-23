@@ -71,7 +71,15 @@
 	margin: 5px 0 0 0;
 	color: #000000;
 	text-align: center;
+	font-family: "黑体";
 }
+pre{
+	font-family: "华文楷体";
+}
+.name{
+	font-family: "华文新魏";
+	line-height: 2em;
+	}
 .card__container--closed .card__title {
 	color: #060;
 	text-align: center;
@@ -82,6 +90,7 @@
 	margin: 5px 0 0;
 	color: #777778;
 	text-align: center;
+	font-family: "华文新魏";
 }
 .card__container--closed .card__subtitle {
 	color: #000000;
